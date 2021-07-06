@@ -3,3 +3,8 @@ export interface References {
 	img: string;
 	lien: string;
 }
+
+export interface Link {
+	nom: string;
+	root: string;
+}

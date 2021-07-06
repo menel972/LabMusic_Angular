@@ -3,16 +3,16 @@
 		src="assets/img/logo_LM.png"
 		alt="Logo"
 		class="pt2 logo"
-		(click)="direct(0)"
+		routerLink=""
 	/>
 	<div class="link flex-row">
 		<ul class="flex-row">
 			<li
 				class="lien ml5"
 				*ngFor="let lien of liens; let index = index"
-				(click)="direct(index)"
+				[routerLink]="lien.root"
 			>
-				{{ lien }}
+				{{ lien.nom }}
 				<hr />
 			</li>
 		</ul>

@@ -1,5 +1,4 @@
 import { Component, OnInit, Output, EventEmitter } from "@angular/core";
-import { BodyService } from "../../shared/services/body.service";
 
 @Component({
   selector: "app-home",
@@ -7,10 +6,7 @@ import { BodyService } from "../../shared/services/body.service";
   styleUrls: ["./home.component.scss"],
 })
 export class HomeComponent implements OnInit {
-  constructor(private change: BodyService) {}
+  constructor() {}
 
   ngOnInit(): void {}
-  direct(i: number): void {
-    this.change.switch(i);
-  }
 }

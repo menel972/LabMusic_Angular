@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 
 import { LibrairiesService } from "../shared/services/librairies.service";
-import { BodyService } from "../shared/services/body.service";
+import { Link } from "../shared/interfaces/ref.interface";
 
 @Component({
   selector: "app-nav",
@@ -9,13 +9,9 @@ import { BodyService } from "../shared/services/body.service";
   styleUrls: ["./nav.component.scss"],
 })
 export class NavComponent implements OnInit {
-  liens: string[] = this.libs.liens;
+  liens: Link[] = this.libs.liens;
 
-  constructor(private libs: LibrairiesService, private change: BodyService) {}
+  constructor(private libs: LibrairiesService) {}
 
   ngOnInit(): void {}
-
-  direct(i: number): void {
-    this.change.switch(i);
-  }
 }

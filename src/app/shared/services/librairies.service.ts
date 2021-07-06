@@ -1,15 +1,16 @@
 import { Injectable } from "@angular/core";
 import { References } from "../interfaces/ref.interface";
+import { Link } from "../interfaces/ref.interface";
 
 @Injectable({
   providedIn: "root",
 })
 export class LibrairiesService {
-  liens: string[] = [
-    "Page d'accueil",
-    "Nos Prestations",
-    "Nos Références",
-    "Nous Contacter",
+  liens: Link[] = [
+    { nom: "Page d'accueil", root: "" },
+    { nom: "Nos Prestations", root: "prestations" },
+    { nom: "Nos Références", root: "references" },
+    { nom: "Nous Contacter", root: "contact" },
   ];
 
   Reference: References[] = [

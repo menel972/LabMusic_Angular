@@ -4,9 +4,9 @@
 		<ul>
 			<li
 				*ngFor="let lien of liens; let index = index"
-				(click)="direct(index)"
+				[routerLink]="lien.root"
 			>
-				{{ lien }}
+				{{ lien.nom }}
 				<hr />
 			</li>
 		</ul>
@@ -49,12 +49,7 @@
 			<hr
 		/></a>
 	</article>
-	<img
-		src="assets/img/logo_LM.png"
-		alt="Logo"
-		class="logo"
-		(click)="direct(0)"
-	/>
+	<img src="assets/img/logo_LM.png" alt="Logo" class="logo" routerLink="" />
 </section>
 <section class="copy flex-row just-center align-center">
 	<p>
