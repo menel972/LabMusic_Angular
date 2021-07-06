@@ -1,0 +1,35 @@
+// FONDS & BORDURES
+
+$PrimColor: #f0b501;
+$LinearLight: #ffde6a;
+$LinearDark: #e4ab02;
+$ScnColor: #705622;
+//$AccColor: #;
+$Gris: #ddd;
+
+//TEXTES
+
+$TxtColor: #222;
+//$HprimColor: #;
+//$HscnColor: #;
+//$LinkColor: #;
+
+//EXTENDS
+
+%Lien {
+	&:hover {
+		hr {
+			width: 70%;
+			border: 1px solid rgba(#000, 0.4);
+		}
+		.hr1 {
+			border: 1px solid rgba(black, 0.8);
+		}
+	}
+}
+
+%HrLien {
+	border: 1px solid rgba($LinearDark, 0);
+	width: 0vh;
+	transition: width 0.3s linear;
+}

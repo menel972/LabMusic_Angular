@@ -1,0 +1,81 @@
+<div class="flex-columne just-btwn mt2 mb2 p2">
+	<h3>Lab Music les a aidé à trouver leur voix :</h3>
+	<section class="pops flex-row just-arnd align-center mt5 mb5">
+		<a
+			class="pop3 flex-column align-center"
+			[href]="ref[2].lien"
+			target="_blank"
+		>
+			<img
+				class="pop"
+				[src]="ref[2].img"
+				[alt]="ref[2].nom"
+				(mouseenter)="this.quote2 = !this.quote2"
+				(mouseleave)="this.quote2 = !this.quote2"
+			/>
+
+			<blockquote class="pt2 pb2" *ngIf="quote2">
+				"Truffaut - Plus belle sera la Terre !"
+			</blockquote>
+		</a>
+
+		<a
+			class="pop5 flex-column align-center"
+			[href]="ref[4].lien"
+			target="_blank"
+		>
+			<img
+				class="pop"
+				[src]="ref[4].img"
+				[alt]="ref[4].nom"
+				(mouseenter)="this.quote4 = !this.quote4"
+				(mouseleave)="this.quote4 = !this.quote4"
+			/>
+
+			<blockquote class="pt2 pb2" *ngIf="quote4">
+				"Paris Aéroport - Paris vous aime !"
+			</blockquote>
+		</a>
+
+		<a
+			class="pop4 flex-column align-center"
+			[href]="ref[3].lien"
+			target="_blank"
+		>
+			<img
+				class="pop"
+				[src]="ref[3].img"
+				[alt]="ref[3].nom"
+				(mouseenter)="this.quote3 = !this.quote3"
+				(mouseleave)="this.quote3 = !this.quote3"
+			/>
+			<blockquote class="pt2 pb2" *ngIf="quote3">
+				"Animalis - Les animaux à vivre et à aimer !"
+			</blockquote>
+		</a>
+
+		<a
+			class="pop1 flex-column align-center"
+			[href]="ref[0].lien"
+			target="_blank"
+		>
+			<img
+				class="pop"
+				[src]="ref[0].img"
+				[alt]="ref[0].nom"
+				(mouseenter)="this.quote0 = !this.quote0"
+				(mouseleave)="this.quote0 = !this.quote0"
+			/>
+
+			<blockquote class="pt2 pb2" *ngIf="quote0">
+				"Heytens - Toutes les solutions déco de vos fenêtres !"
+			</blockquote>
+		</a>
+	</section>
+	<section class="flex-row just-arnd align-center pt2">
+		<p>Enregistrements de <b>messages promotionnels</b></p>
+		<p>Prouction de <b>spots publicitaires</b></p>
+		<p>Production de <b>répondeurs téléphoniques</b> personnalisés</p>
+	</section>
+	<!-- /.flex-row just-arnd align-center pb2 -->
+</div>

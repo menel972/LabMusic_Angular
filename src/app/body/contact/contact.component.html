@@ -1,0 +1,38 @@
+<h3 class="pt5 pr5 pl5 pb2">
+	Pour toutes demandes de devis ou d'informations, retrouvez-nous aux adresses
+	suivantes :
+</h3>
+<section class="flex-row just-arnd p5">
+	<a class="mr2" href="mailto:contact@lab-music.com"
+		><img
+			src="assets/img/outline_alternate_email_black_24dp.png"
+			alt="a commercial"
+			class="mr2" />
+		Mail: contact@lab-music.com
+		<hr
+	/></a>
+
+	<a class="mr2" href="tel:+33143011830">
+		<img
+			src="assets/img/outline_local_phone_black_24dp.png"
+			alt="téléphone"
+			class="mr2" />Tel: 01.43.01.18.30
+		<hr
+	/></a>
+	<a href="https://goo.gl/maps/9SXcZHBPxEB7eYnT7" target="_blank"
+		><img
+			src="assets/img/outline_maps_home_work_black_24dp.png"
+			alt="maison"
+			class="mr2" />Adresse: 9 Ter Allée de Tolbiac, 93220 Gagny
+		<hr
+	/></a>
+</section>
+
+<google-map
+	class="flex-row just-center pb5 maps"
+	height="51vh"
+	width="80%"
+	[options]="mapOptions"
+>
+	<map-marker [options]="markerOptions"></map-marker>
+</google-map>

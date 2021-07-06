@@ -1,0 +1,39 @@
+@import "../../libs/variables";
+
+h5,
+p,
+a,
+li {
+	color: #fff;
+}
+
+a,
+li {
+	font-size: 1.1rem;
+	&:hover {
+		color: $PrimColor;
+		hr {
+			border: 1px solid rgba($PrimColor, 0.6);
+		}
+	}
+}
+
+p,
+b {
+	font-size: 0.9rem;
+}
+
+.foot {
+	background-color: #111;
+	article {
+		a,
+		li {
+			margin-top: 2vh;
+		}
+	}
+}
+
+.copy {
+	background-color: #000;
+	padding: 1vh 0;
+}

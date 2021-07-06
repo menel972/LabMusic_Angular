@@ -1,0 +1,64 @@
+<section class="foot flex-row just-arnd align-start pt5 pb5">
+	<article class="renvoie flex-column just-arnd align-start">
+		<h5>Pages</h5>
+		<ul>
+			<li
+				*ngFor="let lien of liens; let index = index"
+				(click)="direct(index)"
+			>
+				{{ lien }}
+				<hr />
+			</li>
+		</ul>
+	</article>
+	<article class="renvoie flex-column just-arnd align-start">
+		<h5>Partenaire</h5>
+		<a
+			href="https://www.biamp.com/products/product-families/apart"
+			target="_blank"
+			>Apart Audio
+			<hr
+		/></a>
+		<a
+			href="https://www.bose.fr/fr_fr/products/speakers/portable_pa_speakers.html"
+			target="_blank"
+			>Bose
+			<hr
+		/></a>
+		<a href="https://www.bouyer.com/" target="_blank"
+			>Bouyer
+			<hr
+		/></a>
+		<a href="https://fr-fr.sennheiser.com/" target="_blank"
+			>Sennheiser
+			<hr
+		/></a>
+	</article>
+	<article class="renvoie flex-column just-arnd align-start">
+		<h5>Contact</h5>
+		<a href="https://goo.gl/maps/9SXcZHBPxEB7eYnT7" target="_blank"
+			><u>Adresse:</u> 9 Ter Allée de Tolbiac, <br />93220 Gagny
+			<hr
+		/></a>
+		<a href="tel:+33143011830"
+			><u>Tel:</u> 01.43.01.18.30
+			<hr
+		/></a>
+		<a href="mailto:contact@lab-music.com"
+			><u>Mail:</u> contact@lab-music.com
+			<hr
+		/></a>
+	</article>
+	<img
+		src="assets/img/logo_LM.png"
+		alt="Logo"
+		class="logo"
+		(click)="direct(0)"
+	/>
+</section>
+<section class="copy flex-row just-center align-center">
+	<p>
+		Copyright &#169; 2001,2002 <b>LAB MUSIC EXPANSION</b>&trade;. Tous
+		droits réservés.
+	</p>
+</section>
