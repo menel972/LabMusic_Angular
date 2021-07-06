@@ -1,0 +1,177 @@
+<h2 class="m5">
+	Ils ont fait confiance à Lab Music pour leur identité sonore :
+</h2>
+<!-- /.ml5 -->
+<div class="flex-row just-arnd pt5 pb5">
+	<a
+		class="pop1 flex-column align-center"
+		[href]="ref[0].lien"
+		target="_blank"
+	>
+		<img
+			class="pop"
+			[src]="ref[0].img"
+			[alt]="ref[0].nom"
+			(mouseenter)="this.quote0 = !this.quote0"
+			(mouseleave)="this.quote0 = !this.quote0"
+		/>
+
+		<blockquote class="pt2 pb2" *ngIf="quote0">
+			"Toutes les solutions déco de vos fenêtres !"
+		</blockquote>
+		<p *ngIf="quote0">
+			Près de 100 magasins sonorisés par <b>Lab Music</b> dans toute la
+			France, Belgique, Suisse et Luxembourg...
+		</p>
+	</a>
+
+	<a
+		class="pop2 flex-column align-center"
+		[href]="ref[7].lien"
+		target="_blank"
+	>
+		<img
+			class="pop"
+			[src]="ref[7].img"
+			[alt]="ref[7].nom"
+			(mouseenter)="this.quote7 = !this.quote7"
+			(mouseleave)="this.quote7 = !this.quote7"
+		/>
+		<blockquote class="pt2 pb2" *ngIf="quote7">
+			"Entreprise citoyenne, entreprise du monde !"
+		</blockquote>
+		<p *ngIf="quote7">
+			La Maison Coloniale aussi a choisi <b>Lab Music</b> pour sonoriser
+			ses espaces...
+		</p>
+	</a>
+
+	<a
+		class="pop3 flex-column align-center"
+		[href]="ref[2].lien"
+		target="_blank"
+	>
+		<img
+			class="pop"
+			[src]="ref[2].img"
+			[alt]="ref[2].nom"
+			(mouseenter)="this.quote2 = !this.quote2"
+			(mouseleave)="this.quote2 = !this.quote2"
+		/>
+
+		<blockquote class="pt2 pb2" *ngIf="quote2">
+			"Plus belle sera la Terre !"
+		</blockquote>
+		<p *ngIf="quote2">
+			Plus de 60 jardineries Truffaut sonorisées par <b>Lab Music</b> dans
+			toute la France...
+		</p>
+	</a>
+
+	<a
+		class="pop4 flex-column align-center"
+		[href]="ref[3].lien"
+		target="_blank"
+	>
+		<img
+			class="pop"
+			[src]="ref[3].img"
+			[alt]="ref[3].nom"
+			(mouseenter)="this.quote3 = !this.quote3"
+			(mouseleave)="this.quote3 = !this.quote3"
+		/>
+		<blockquote class="pt2 pb2" *ngIf="quote3">
+			"Les animaux à vivre et à aimer !"
+		</blockquote>
+		<p *ngIf="quote3">
+			Près de 50 magasins Animalis sonorisés par <b>Lab Music</b> dans
+			toute la France...
+		</p>
+	</a>
+
+	<a
+		class="pop5 flex-column align-center"
+		[href]="ref[4].lien"
+		target="_blank"
+	>
+		<img
+			class="pop"
+			[src]="ref[4].img"
+			[alt]="ref[4].nom"
+			(mouseenter)="this.quote4 = !this.quote4"
+			(mouseleave)="this.quote4 = !this.quote4"
+		/>
+
+		<blockquote class="pt2 pb2" *ngIf="quote4">
+			"Paris vous aime !"
+		</blockquote>
+		<p *ngIf="quote4">
+			Les aéroports Charles-de-Gaulle et Orly sont eux aussi sonorisés par
+			<b>Lab Music</b>...
+		</p>
+	</a>
+</div>
+<div class="flex-row just-arnd pt2 pb5">
+	<a
+		class="pop1 flex-column align-center"
+		[href]="ref[5].lien"
+		target="_blank"
+	>
+		<img
+			class="pop"
+			[src]="ref[5].img"
+			[alt]="ref[5].nom"
+			(mouseenter)="this.quote5 = !this.quote5"
+			(mouseleave)="this.quote5 = !this.quote5"
+		/>
+
+		<blockquote class="pt2 pb2" *ngIf="quote5">
+			"Entrez dans le monde de luxe et d’exotisme!"
+		</blockquote>
+		<p *ngIf="quote5">
+			Les 4 hôtels de luxe du groupe Sun Resot à l'Île Maurice sont
+			sonorisés par <b>Lab Music</b>...
+		</p>
+	</a>
+
+	<a
+		class="pop2 flex-column align-center"
+		[href]="ref[6].lien"
+		target="_blank"
+	>
+		<img
+			class="pop"
+			[src]="ref[6].img"
+			[alt]="ref[6].nom"
+			(mouseenter)="this.quote6 = !this.quote6"
+			(mouseleave)="this.quote6 = !this.quote6"
+		/>
+		<blockquote class="pt2 pb2" *ngIf="quote6">
+			"Le Touessrok, Resort & Spa Mauritius !"
+		</blockquote>
+		<p *ngIf="quote6">
+			Le luxeux hôtel mauricien Le Touessrok et ses différents espaces
+			sont entièrement sonorisés par <b>Lab Music</b>...
+		</p>
+	</a>
+	<a
+		class="pop2 flex-column align-center"
+		[href]="ref[7].lien"
+		target="_blank"
+	>
+		<img
+			class="pop"
+			[src]="ref[1].img"
+			[alt]="ref[1].nom"
+			(mouseenter)="this.quote1 = !this.quote1"
+			(mouseleave)="this.quote1 = !this.quote1"
+		/>
+		<blockquote class="pt2 pb2" *ngIf="quote1">
+			"Hôtels et complexes hôteliers haut de gamme dans le monde entier !"
+		</blockquote>
+		<p *ngIf="quote1">
+			5 hôtels prestigieux sonorisés sur mesure par <b>Lab Music</b> en
+			France, Belgique et Suisse...
+		</p>
+	</a>
+</div>

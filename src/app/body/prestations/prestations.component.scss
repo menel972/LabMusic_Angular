@@ -1,0 +1,40 @@
+#img1 {
+	width: 48vh;
+	height: auto;
+}
+
+#img2 {
+	width: 39vh;
+	height: auto;
+}
+
+#bloc {
+	flex-wrap: wrap;
+}
+
+.titre {
+	text-align: center;
+	margin-bottom: 8vh;
+}
+
+.contenu {
+	p {
+		margin-bottom: 3vh;
+	}
+
+	del {
+		color: rgba(91, 91, 91, 0.5);
+	}
+}
+
+.btn {
+	margin: 6vh 0;
+}
+
+a {
+	margin: 0 0 0 10vh;
+}
+
+.art {
+	box-shadow: 0px 0px 10px black;
+}

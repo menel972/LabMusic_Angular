@@ -1,0 +1,20 @@
+<section class="navbar flex-row just-btwn align-center pl5 pr5">
+	<img
+		src="assets/img/logo_LM.png"
+		alt="Logo"
+		class="pt2 logo"
+		(click)="direct(0)"
+	/>
+	<div class="link flex-row">
+		<ul class="flex-row">
+			<li
+				class="lien ml5"
+				*ngFor="let lien of liens; let index = index"
+				(click)="direct(index)"
+			>
+				{{ lien }}
+				<hr />
+			</li>
+		</ul>
+	</div>
+</section>
