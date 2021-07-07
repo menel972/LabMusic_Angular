@@ -40,12 +40,36 @@ p,
 	font-size: 1.4rem;
 }
 
+.linked {
+	cursor: pointer;
+}
+
+.ActiveLink1 {
+	hr {
+		width: 70%;
+		border: 1px solid rgba(#000, 0.8);
+	}
+
+	&:hover {
+		hr {
+			width: 70%;
+			border: 1px solid rgba(#000, 0.8);
+		}
+	}
+}
+
+.ActiveLink2 {
+	hr {
+		width: 70%;
+		border: 1px solid rgba(#fff, 0.8);
+	}
+}
+
 a,
 li,
 .btn,
 .btn1 {
 	@extend %Lien;
-	cursor: pointer;
 }
 
 hr {
@@ -71,7 +95,6 @@ hr {
 
 .logo {
 	height: 16vh;
-	cursor: pointer;
 }
 
 #paragraph {

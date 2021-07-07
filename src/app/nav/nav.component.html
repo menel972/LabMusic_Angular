@@ -2,15 +2,17 @@
 	<img
 		src="assets/img/logo_LM.png"
 		alt="Logo"
-		class="pt2 logo"
+		class="pt2 linked logo"
 		routerLink=""
 	/>
 	<div class="link flex-row">
 		<ul class="flex-row">
 			<li
-				class="lien ml5"
+				class="lien linked ml5"
 				*ngFor="let lien of liens; let index = index"
 				[routerLink]="lien.root"
+				routerLinkActive="ActiveLink1"
+				[routerLinkActiveOptions]="{ exact: true }"
 			>
 				{{ lien.nom }}
 				<hr />

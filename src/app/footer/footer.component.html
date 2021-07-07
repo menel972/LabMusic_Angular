@@ -4,7 +4,10 @@
 		<ul>
 			<li
 				*ngFor="let lien of liens; let index = index"
+				class="linked"
 				[routerLink]="lien.root"
+				routerLinkActive="ActiveLink2"
+				[routerLinkActiveOptions]="{ exact: true }"
 			>
 				{{ lien.nom }}
 				<hr />
@@ -49,7 +52,12 @@
 			<hr
 		/></a>
 	</article>
-	<img src="assets/img/logo_LM.png" alt="Logo" class="logo" routerLink="" />
+	<img
+		src="assets/img/logo_LM.png"
+		alt="Logo"
+		class="logo linked"
+		routerLink=""
+	/>
 </section>
 <section class="copy flex-row just-center align-center">
 	<p>
