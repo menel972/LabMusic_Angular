@@ -38,3 +38,72 @@ a {
 .art {
 	box-shadow: 0px 0px 10px black;
 }
+
+.explain {
+	flex: 1 1 25%;
+	font-size: 1.9rem;
+	line-height: 2rem;
+}
+
+
+@media screen and (min-width: 1500px) {
+	.explain {
+		font-size: 2.1rem;
+		line-height: 2.3rem;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.explain {
+		font-size: 2.1rem;
+		line-height: 2.3rem;
+	}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1133px) {
+	
+	.titreh2 {
+		margin-bottom: 2vh;
+	}
+
+	#bloc p {
+		font-size: 2.2rem;
+		line-height: 2.5rem
+	}
+
+	#bloc h3 {
+		font-size: 2.5rem;
+		line-height: 2.8rem
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px){
+	#devis {
+		margin-bottom: 20vh;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px){
+	#devis {
+		margin-bottom: 20vh;
+	}
+}
+
+@media screen and (max-width: 499px) {
+	
+	#devis {
+		margin-bottom: 20vh;
+	}
+
+	#bloc {
+		flex-direction: column;
+		align-items: center;
+
+		section {
+			flex : 1 1 100%;
+			color: red;
+			padding: 1vh 0;
+		}
+	}
+}
+

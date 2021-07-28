@@ -1,5 +1,86 @@
 @import "../../libs/variables";
 
 .lien {
-	font-size: 1.4rem;
+	font-size: 2.3rem;
+	line-height: 2.6rem;
 }
+
+@media screen and (max-width: 1500px) {
+	
+	.lien {
+		font-size: 2.5rem;
+		line-height: 2.8rem;
+	}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1133px) {
+
+	.lien {
+		font-size: 2.1rem;
+		line-height: 2.4rem;
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px){
+	
+	.navbar {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+
+		background-color: #111;
+	}
+
+	ul {
+		padding-right: 10vh;
+		li {
+		color: #fff;
+
+		}
+
+	}
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px){
+	
+	.navbar {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+
+		background-color: #111;
+	}
+
+	ul {
+		padding-right: 10vh;
+		li {
+		color: #fff;
+
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 499px){
+	
+	.navbar {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+
+		background-color: #111;
+	}
+
+	ul {
+		padding-right: 10vh;
+		li {
+		color: #fff;
+
+		}
+
+	}
+
+}
+

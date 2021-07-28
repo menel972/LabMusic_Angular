@@ -1,6 +1,10 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 import { GoogleMapsModule } from "@angular/google-maps";
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -25,7 +29,7 @@ import { BandeauComponent } from './body/prestations/bandeau/bandeau.component';
     HomeComponent,
     BandeauComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, GoogleMapsModule],
+  imports: [BrowserModule, AppRoutingModule, GoogleMapsModule, MatIconModule, BrowserAnimationsModule,],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -7,4 +7,5 @@ export interface References {
 export interface Link {
 	nom: string;
 	root: string;
+	image: string;
 }

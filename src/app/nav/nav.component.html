@@ -1,11 +1,11 @@
-<section class="navbar flex-row just-btwn align-center pl5 pr5">
+<section class="navbar flex-row just-btwn align-center pl5 pr5" id="tabbar">
 	<img
 		src="assets/img/logo_LM.png"
 		alt="Logo"
-		class="pt2 linked logo"
+		class="pt2 linked logo l"
 		routerLink=""
 	/>
-	<div class="link flex-row">
+	<div class="link xl">
 		<ul class="flex-row">
 			<li
 				class="lien linked ml5"
@@ -16,6 +16,21 @@
 			>
 				{{ lien.nom }}
 				<hr />
+			</li>
+		</ul>
+	</div>
+
+	<div class="xs flex-70" >
+		<ul class="flex-row just-arnd pt2 pb2">
+			<li
+				class="lienXS linked ml5"
+				*ngFor="let lien of Liens$; let index = index"
+				[routerLink]="lien.root"
+				routerLinkActive="ActiveLinkXS"
+				[routerLinkActiveOptions]="{ exact: true }"
+			>
+				<mat-icon>{{ lien.image }}</mat-icon>
+				<hr/>
 			</li>
 		</ul>
 	</div>

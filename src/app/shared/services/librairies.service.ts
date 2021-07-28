@@ -7,11 +7,19 @@ import { Link } from "../interfaces/ref.interface";
 })
 export class LibrairiesService {
   liens: Link[] = [
-    { nom: "Page d'accueil", root: "" },
-    { nom: "Nos Prestations", root: "prestations" },
-    { nom: "Nos Références", root: "references" },
-    { nom: "Nous Contacter", root: "contact" },
+    { nom: "Page d'accueil", root: "", image: "home" },
+    { nom: "Nos Prestations", root: "prestations", image: "work" },
+    { nom: "Nos Références", root: "references", image: "business_center" },
+    { nom: "Nous Contacter", root: "contact", image: "local_phone" },
   ];
+
+  liens$: Link[] = [
+    { nom: "Page d'accueil", root: "", image: "home" },
+    { nom: "Nos Prestations", root: "prestations", image: "work" },
+    { nom: "Nous Contacter", root: "contact", image: "local_phone" },
+  ];
+
+ 
 
   Reference: References[] = [
     {

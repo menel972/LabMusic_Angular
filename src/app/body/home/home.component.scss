@@ -2,3 +2,16 @@ img {
 	width: 75vh;
 	height: auto;
 }
+
+@media screen and (max-width: 499px) {
+	.box {
+		flex-direction: column;
+		height: 100vh;
+		padding-bottom: 20vh;
+	}
+
+	img {
+		width: 35vh;
+	}
+
+}

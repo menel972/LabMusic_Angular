@@ -6,6 +6,8 @@
 
 //General
 
+
+//TYPO
 h1,
 h2,
 h5 {
@@ -23,22 +25,152 @@ blockquote {
 }
 
 h1 {
-	font-size: 3rem;
-	line-height: 3rem;
+	font-size: 5rem;
+	line-height: 5.3rem;
 }
 
 h2 {
-	font-size: 2.3rem;
+	font-size: 3.6rem;
+	line-height: 3.9rem;
 }
 
 h3 {
-	font-size: 1.8rem;
+	font-size: 2.9rem;
+	line-height: 3.2rem;
 }
+
 h5,
 p,
 .btn {
-	font-size: 1.4rem;
+	font-size: 2.3rem;
+	line-height: 2.6rem;
 }
+
+@media screen and (min-width: 1500px) {
+	
+	h1 {
+		color: red;
+	}
+
+	html {
+		font-size: 90.2%;
+	}
+	
+	h3 {
+		font-size: 3rem;
+		line-height: 3.3rem;
+	}
+
+	.xs {
+		display: none;
+	}
+
+}
+
+@media screen and (min-width: 1245px) and (max-width: 1499px) {
+
+	h1 { 
+		color: blue;
+	}
+
+	.xs {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1134px) and (max-width: 1244px) {
+
+	h1 { 
+		color: brown;
+	}
+	
+	html {
+		font-size: 55.6%;
+	}
+
+	.xs {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1133px) {
+
+	h1 { 
+		color: green;
+	}
+
+	h3, b {
+		font-size: 3rem;
+		line-height: 3.2rem;
+	}
+	
+	html {
+		font-size: 55%;
+	}
+
+	.xs {
+		display: none;
+	}
+
+	.logo {
+		height: 10vh;
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px){
+	
+	html {
+		font-size: 45%;
+	}
+
+	.xl {
+		display: none;
+	}
+
+	#tabbar {
+		z-index: 4;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+
+	html {
+		font-size: 45%;
+	}
+
+	.xl { display: none;
+	}
+
+	#tabbar {
+		z-index: 4;
+	}
+}
+
+
+@media screen and (max-width: 499px) {
+
+	html {
+		font-size: 45%;
+	}
+
+	.xl { display: none;
+	}
+
+	.l { display: none;
+	}
+
+	
+
+	#tabbar {
+		z-index: 4;
+	}
+}
+
+
+
+
+
+//MEP
 
 .linked {
 	cursor: pointer;
@@ -65,6 +197,14 @@ p,
 	}
 }
 
+.ActiveLinkXS {
+	hr {
+		width: 100%;
+		border: 1px solid rgba(#fff, 0.8);
+	}
+}
+
+
 a,
 li,
 .btn,
@@ -84,7 +224,6 @@ hr {
 .btn {
 	border: none;
 	background: none;
-	margin-left: 10vh;
 }
 
 //Body
@@ -100,3 +239,6 @@ hr {
 #paragraph {
 	margin-bottom: 10vh;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -3,9 +3,10 @@ import { References } from "../shared/interfaces/ref.interface";
 
 @Component({
   selector: "app-body",
-  templateUrl: "./body.component.html",
-  styleUrls: ["./body.component.scss"],
-})
+  template: "<router-outlet></router-outlet>"})
+
+
+
 export class BodyComponent implements OnInit {
   constructor() {}
 
